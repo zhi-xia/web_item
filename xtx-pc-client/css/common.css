@@ -1,0 +1,363 @@
+/* 各个项目相同的样式表：头、尾部 */
+/* 版心 */
+.wrapper {
+    width: 1240px;
+    margin: 0 auto;
+}
+
+/* 快捷导航 */
+.shortcut {
+    height: 52px;
+    background-color: #333;
+}
+
+.shortcut .wrapper {
+    height: 52px;
+}
+
+.shortcut .wrapper ul {
+    float: right;
+}
+
+.shortcut .wrapper li {
+    float: left;
+    line-height: 52px;
+}
+
+.shortcut .wrapper li:last-child a{
+    border-right: 0;
+}
+
+.shortcut .wrapper a {
+    padding: 0 16px;
+    border-right: 1px solid #666;
+    font-size: 14px;
+    color: #dcdcdc;
+}
+
+.shortcut .wrapper a span {
+    display: inline-block;
+    margin-right: 8px;
+    width: 11px;
+    height: 16px;
+    background-image: url(../images/sprites.png);
+    background-position: -160px -70px;
+
+    vertical-align: middle;
+}
+
+/* 头部 */
+.header {
+    margin: 30px auto;
+    height: 70px;
+}
+
+.logo {
+    float: left;
+    width: 207px;
+    height: 70px;
+}
+
+/* 搜索引擎优化 */
+.logo h1 {
+    width: 207px;
+    height: 70px;
+}
+
+.logo h1 a {
+    display: block;
+    width: 207px;
+    height: 70px;
+    background-image: url(../images/logo.png);
+    background-size: contain;
+    /* 目的：让h1里面的文字看不见 */
+    font-size: 0;
+}
+
+.nav {
+    float: left;
+    margin-left: 40px;
+    height: 70px;
+}
+
+.nav li {
+    float: left;
+    margin-right: 48px;
+    line-height: 70px;
+}
+
+.nav li a {
+    padding-bottom: 7px;
+}
+
+.nav li a:hover {
+    color: #27ba9b;
+    border-bottom: 1px solid #27ba9b;
+}
+
+.search {
+    position: relative;
+    float: left;
+    margin-top: 24px;
+    margin-left: 34px;
+    width: 172px;
+    height: 30px;
+    border-bottom: 2px solid #e7e7e7;
+}
+
+.search input {
+    padding-left: 30px;
+    width: 172px;
+    height: 28px;
+}
+
+/* 修改placeholder的字体 */
+.search input::placeholder {
+    font-size: 14px;
+    color: #ccc;
+}
+
+.search span {
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    /* display: inline-block; */
+    width: 18px;
+    height: 18px;
+    background-image: url(../images/sprites.png);
+    background-position: -80px -70px;
+}
+
+.car {
+    position: relative;
+    float: left;
+    margin-left: 15px;
+    margin-top: 28px;
+    width: 23px;
+    height: 23px;
+    background-image: url(../images/sprites.png);
+    background-position: -120px -70px;
+}
+.car span {
+    position: absolute;
+    right: -12px;
+    top: -6px;
+    width: 20px;
+    height: 15px;
+    background-color: #e26237;
+    border-radius: 8px;
+
+    font-size: 13px;
+    color: #fff;
+    text-align: center;
+    line-height: 15px;
+}
+
+/* 服务 */
+.service {
+    margin-top: 42px;
+    height: 300px;
+    /* 解决塌陷问题 */
+    overflow: hidden;
+}
+
+.service ul li {
+    float: left;
+    margin: 80px 50px;
+    width: 192px;
+    height: 143px;
+    /* background-color: skyblue; */
+    text-align: center;
+}
+
+.service ul li:nth-child(3) {
+    width: 242px;
+    height: auto;
+}
+
+.service h3 {
+    font-size: 16px;
+    color: #999;
+    font-weight: 400;
+}
+
+.service ul li a {
+    position: relative;
+    display: inline-block;
+    margin-top: 35px;
+    padding-top: 59px;
+    width: 92px;
+    height: 92px;
+    background-color: #fff;
+    border: 1px solid #eee;
+    font-size: 16px;
+    color: #999;
+}
+
+.service ul li a span {
+    position: absolute;
+    left: 32px;
+    top: 22px;
+}
+
+.service .one {
+    width: 29px;
+    height: 27px;
+    background-image: url(../images/sprites.png);
+    background-position: -250px -70px;
+}
+
+.service .two {
+    width: 29px;
+    height: 29px;
+    background-image: url(../images/sprites.png);
+    background-position: -350px -70px;
+}
+
+.service .three {
+    width: 36px;
+    height: 29px;
+    background-image: url(../images/sprites.png);
+    background-position: -205px -14px;
+}
+
+.service .four {
+    width: 36px;
+    height: 29px;
+    background-image: url(../images/sprites.png);
+    background-position: -350px -15px;
+}
+
+.service .code {
+    float: left;
+    margin-top: 24px;
+    margin-right: 26px;
+    width: 116px;
+    height: 116px;
+    border: 2px solid #eee;
+}
+
+.service .code img {
+    margin-top: 4px;
+    width: 105px;
+    height: 105px;
+}
+
+.service li p {
+    float: left;
+    font-size: 14px;
+    color: #999;
+}
+
+.service li .first{
+    margin-top: 37px;
+}
+
+.service li button {
+    margin-top: 18px;
+    width: 100px;
+    height: 32px;
+    background-color: #27ba9b;
+    border: 0;
+    font-size: 14px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.service .tel {
+    float: right;
+    margin-top: 70px;
+    width: 310px;
+    height: 190px;
+    border-left: 2px solid #f2f2f2;
+    text-align: center;
+}
+
+.service .tel h3 {
+    margin-top: 8px;
+}
+
+.service .tel h4 {
+    margin-top: 38px;
+    font-size: 22px;
+    font-weight: 700;
+    color: #666;
+}
+
+.service .tel h5 {
+    margin-top: 15px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #999;
+}
+
+/* 版权区域 */
+.footer {
+    height: 342px;
+    background-color: #333;
+}
+
+.footer .wrapper {
+    width: 1393px;
+}
+
+.footer .top {
+    padding-top: 60px;
+    padding-left: 135px;
+    height: 175px;
+    border-bottom: 1px solid #434343;
+}
+
+.footer .top li {
+    position: relative;
+    float: left;
+    margin-right: 300px;
+    width: 195px;
+    height: 58px;
+
+    line-height: 58px;
+}
+
+.footer .top li:last-child {
+    margin-right: 0;
+}
+
+.footer .top li::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    /* display: inline-block; */
+    content: '';
+    width: 58px;
+    height: 58px;
+    background-image: url(../images/sprites.png);
+    background-position: 0 0;
+    vertical-align: middle;
+}
+
+.footer .top li span {
+    margin-left: 77px;
+    font-size: 28px;
+    color: #fff;
+}
+
+.footer .top li:nth-child(2)::before {
+    background-image: url(../images/sprites.png);
+    background-position: -64px 0;
+}
+
+.footer .bottom {
+    padding-top: 40px;
+    font-size: 14px;
+    color: #999;
+    text-align: center;
+}
+
+.footer .bottom a {
+    font-size: 14px;
+    color: #999;
+}
+
+.footer .bottom p {
+    margin-bottom: 20px;
+}

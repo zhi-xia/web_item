@@ -1,0 +1,26 @@
+/* 清除默认样式 */
+* {
+    margin: 0;
+    padding: 0;
+    /* 内减模式 */
+    box-sizing: border-box;
+}
+
+/* 清除li样式 */
+li {
+    list-style: none;
+}
+
+/* 清除a样式 */
+a {
+    text-decoration: none;
+}
+
+/* 清除浮动 */
+.clearfix::before,.clearfix::after {
+    content: '';
+    display: table;
+}
+.clearfix::after {
+    clear: both;
+}
